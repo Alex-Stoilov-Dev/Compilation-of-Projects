@@ -8,6 +8,7 @@ Below you can find notes on each of the projects with an overview of the things 
 
 Data reallocation with Arrays
 --
+### This is a small project that was introductory to arrays so we can learn how to move data from one array to another.
 
 Money Calculator
 --
