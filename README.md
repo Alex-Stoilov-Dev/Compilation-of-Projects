@@ -8,33 +8,30 @@ To avoid unnecessary cluttering of this repo, I have only added the main.c files
 Below you can find notes on each of the projects with an overview of the things the projects do.
 
 ---
-
 ### Data Reallocation with Arrays
-This project introduced me to working with arrays in C. It focused on transferring data from one array to another and manipulating arrays dynamically. I learned how to work with fixed-size arrays and handle basic operations such as copying and moving data. It helped me understand the importance of memory management and how array indexing works.
+This project introduced me to arrays and data management. I learned how to transfer and reallocate memory, gaining a solid foundation in array handling, loops, and dynamic resizing in C.
 
 ---
 
 ### Money Calculator
-This project taught me how to handle numerical calculations and conditional logic in C. The focus was on processing money-related operations (such as calculating totals, tax, or currency conversion). It was a good exercise in using loops, conditionals, and simple arithmetic operations to simulate real-life financial calculations.
+This was the largest project of the semester, where I integrated logic from later projects. The focus was on managing a larger codebase, handling input validation, and applying mathematical operations for automating money counting. It taught me how to combine different pieces of code effectively.
 
 ---
 
 ### Numbers to Words
-In this project, I learned how to manipulate numbers and translate them into their corresponding words in C. This taught me the importance of string handling and control flow (such as using `if-else` or `switch` statements). The challenge involved using arrays and conditions to break down numbers into their individual components and convert them into readable text.
+This project focused on converting numbers into readable text. It helped me improve my string manipulation skills and reinforced my understanding of control flow with conditional logic and loops.
 
 ---
 
 ### Odd and Even Numbers Reallocation
-This project involved separating odd and even numbers into different arrays. It was a simple exercise in looping through an array, checking conditions, and storing the results into separate arrays. This taught me how to work with conditional checks and how to create and manage multiple arrays in parallel to store categorized data.
+This project involved sorting odd and even numbers into separate arrays. It was a good exercise in looping, checking conditions, and managing multiple arrays in parallel for categorized data storage.
 
 ---
 
 ### Quadratic Equation Calculator
-In this project, I learned how to solve quadratic equations by calculating their discriminant and roots. It helped me understand more about mathematical functions, square roots, and conditionals for handling different cases (e.g., real and imaginary roots). I also learned about floating-point precision and how to handle both positive and negative roots.
+This project reinforced my mathematical thinking skills. It taught me how to implement complex mathematical concepts, such as finding complex roots of quadratic equations. This project helped me apply theoretical math to programming by translating formulas into code, and it gave me a deeper understanding of how to work with floating-point numbers and precision in C.
 
 ---
 
 ### Questions Array
-This project introduced me to arrays of strings and how to manage user input. I practiced using multi-dimensional arrays and learned how to store and retrieve strings. The project was focused on getting and displaying user input in the form of questions, which gave me experience with handling string data in C and working with simple user-driven interfaces.
-
----
+In this project, I worked with arrays of strings and learned how to manage user input. The goal was to store questions in an array and display them to the user. I learned about multi-dimensional arrays, string handling, and how to prompt users for input. It was a practical exercise in handling strings, arrays, and using loops to manage input/output efficiently.
