@@ -29,7 +29,7 @@ This project involved sorting odd and even numbers into separate arrays. It was 
 ---
 
 ### Quadratic Equation Calculator
-This project reinforced my mathematical thinking skills. It taught me how to implement complex mathematical concepts, such as finding complex roots of quadratic equations. This project helped me apply theoretical math to programming by translating formulas into code, and it gave me a deeper understanding of how to work with floating-point numbers and precision in C.
+This project reinforced my mathematical thinking skills. It taught me how to implement complex mathematical concepts, such as finding imaginary roots of quadratic equations turning that into code logic. This project helped me apply theoretical math to programming by translating formulas into code, and it gave me a deeper understanding of how to work with floating-point numbers and precision in C.
 
 ---
 
