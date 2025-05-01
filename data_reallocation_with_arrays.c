@@ -4,35 +4,37 @@
 
 int main() {
 	
+	// Set the console to Windows-1251 encoding for Bulgarian characters (optional in English version)
 	system("C:\\Windows\\System32\\chcp 1251 > null");
 
-
-	//Initiate variables
-	int reals[10];
-	int negs = 0;
-	int negativeNums[10];
+	// Initialize arrays and counters
+	int reals[10];             // Array to store 10 integer inputs
+	int negs = 0;              // Counter for number of negative values
+	int negativeNums[10];     // Array to store only negative numbers
 	int i;
 
-	//User input into array
-	for(i = 0; i < 10; i++){
-		scanf("%d",&reals[i]);
+	// Read 10 numbers from the user and store them in 'reals' array
+	for(i = 0; i < 10; i++) {
+		scanf("%d", &reals[i]);
 	}
 
-	//checks if numbers in the "reals" array are less than zero, if so it moves them to the negativeNums array
-	printf("\nÌàñèâúò îò ðåàëíè ÷èñëà å: ");
-	for(i = 0; i < 10; i++){
-		if(reals[i] < 0){
+	// Print the original array and extract negative values
+	printf("\nMasivut ot realni chisla e: ");
+	for(i = 0; i < 10; i++) {
+		if(reals[i] < 0) {
+			// Store negative numbers in separate array
 			negativeNums[negs++] = reals[i];
 		}
-		printf("%d ", reals[i]);
+		printf("%d ", reals[i]);  // Print each number
 	}
-	//checks if the array is empty, and it prints that to the screen or prints the array 
-	if(negs == 0){
-		printf("\nÂ ìàñèâà íÿìà âúâåäåíè îòðèöàòåëíè ÷èñëà");
-	}
-	else{
-		printf("\nÌàñèâúò îò îòðèöàòåëíè ÷èñëà å: ");
-		for(i = 0; i < negs; i++){
+
+	// Check if any negative numbers were found
+	if(negs == 0) {
+		printf("\nV masiva nyama vavedeni otricatelni chisla");
+	} else {
+		printf("\nMasivut ot otricatelni chisla e: ");
+		// Print the array of negative numbers
+		for(i = 0; i < negs; i++) {
 			printf("%d ", negativeNums[i]);
 		}
 	}
