@@ -5,28 +5,33 @@
 int main() {
 	
 	system("C:\\Windows\\System32\\chcp 1251 > null");
-	
+
+
+	//Initiate variables
 	int reals[10];
 	int negs = 0;
 	int negativeNums[10];
 	int i;
-	
+
+	//User input into array
 	for(i = 0; i < 10; i++){
 		scanf("%d",&reals[i]);
 	}
-	
-	printf("\nÌàñèâúò îò ğåàëíè ÷èñëà å: ");
+
+	//checks if numbers in the "reals" array are less than zero, if so it moves them to the negativeNums array
+	printf("\nÃŒÃ Ã±Ã¨Ã¢ÃºÃ² Ã®Ã² Ã°Ã¥Ã Ã«Ã­Ã¨ Ã·Ã¨Ã±Ã«Ã  Ã¥: ");
 	for(i = 0; i < 10; i++){
 		if(reals[i] < 0){
 			negativeNums[negs++] = reals[i];
 		}
 		printf("%d ", reals[i]);
 	}
+	//checks if the array is empty, and it prints that to the screen or prints the array 
 	if(negs == 0){
-		printf("\nÂ ìàñèâà íÿìà âúâåäåíè îòğèöàòåëíè ÷èñëà");
+		printf("\nÃ‚ Ã¬Ã Ã±Ã¨Ã¢Ã  Ã­Ã¿Ã¬Ã  Ã¢ÃºÃ¢Ã¥Ã¤Ã¥Ã­Ã¨ Ã®Ã²Ã°Ã¨Ã¶Ã Ã²Ã¥Ã«Ã­Ã¨ Ã·Ã¨Ã±Ã«Ã ");
 	}
 	else{
-		printf("\nÌàñèâúò îò îòğèöàòåëíè ÷èñëà å: ");
+		printf("\nÃŒÃ Ã±Ã¨Ã¢ÃºÃ² Ã®Ã² Ã®Ã²Ã°Ã¨Ã¶Ã Ã²Ã¥Ã«Ã­Ã¨ Ã·Ã¨Ã±Ã«Ã  Ã¥: ");
 		for(i = 0; i < negs; i++){
 			printf("%d ", negativeNums[i]);
 		}
