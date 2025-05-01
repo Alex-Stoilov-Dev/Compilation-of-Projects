@@ -4,42 +4,25 @@
 
 int main(int argc, char *argv[]) {
 	
-	system("C:\\Windows\\System32\\chcp 1251 > null");
+	system("C:\\Windows\\System32\\chcp 1251 > null");  // Set the console to use Cyrillic encoding for Bulgarian characters.
 	
-	int exit = 0;
+	int exit = 0;  // This is used to control the loop exit condition
 	
-	do{
-		char vuprosi[5][30];
+	do {
+		char vuprosi[5][30];  // Array to store 5 questions, each with a maximum of 30 characters
 		int i;
-		int n;
-		char vupros[20];
+		int n;  // Variable to store the selected question index
+		char vupros[20];  // To temporarily store a question input
 		
-		fflush(stdin);
+		fflush(stdin);  // Clear the input buffer
 		
-		for (i = 0; i<5; i++){
-			printf("Моля задайте вашите въпроси: ");
-			gets(vuprosi[i]);
+		// Prompt the user to input 5 questions
+		for (i = 0; i < 5; i++) {
+			printf("Milya zadavaite vuprosite: ");  // "Please enter the question:"
+			gets(vuprosi[i]);  // Read the question (unsafe, but typical in this case)
 		}
 		
-		printf("Кой въпрос желаете да видите? (1-5) : ");
-		scanf("%d", &n);
-		while(n <= 0 || n > 5){
-			printf("Моля изберете въпрос в диапазона 1-5 ");
-			scanf("%d", &n);
-		}
-	
-		n = n - 1;
-		
-		printf("Въпросът, който зададохте е: \n\n");		
-		
-		puts(vuprosi[n]);
-		
-		printf("\nAко искате да прекратите програмате, моля въведете отрицателно число: ");
-		scanf("%d", &exit);
-		printf("\n");
-	}while(exit >= 0);
-	
-	system("PAUSE");
-	
-	return 0;
-}
+		// Ask which question to display (1-5)
+		printf("Koy vupros shte byde otpechatan? (1-5) : ");
+		scanf("%d", &n);  // Input the number of the question to display
+		while (n <=
